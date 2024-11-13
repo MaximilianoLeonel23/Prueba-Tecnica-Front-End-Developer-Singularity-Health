@@ -11,6 +11,7 @@ export default {
 				'comfortaa-bold': ['Comfortaa-Bold'],
 				'segoe-ui-regular': ['SegoeUI-Regular'],
 				'segoe-ui-bold': ['SegoeUI-Bold'],
+				'gibson-semibold': ['Gibson-SemiBold'],
 			},
 			colors: {
 				// Neutros
@@ -19,6 +20,7 @@ export default {
 				'gray-light': '#F8F8F8',
 				'gray-medium': '#A4AFB7',
 				'gray-dark': '#707070',
+				'gray-extra-dark': '#4D4F5C',
 				'gray-muted': '#808080',
 
 				// Primarios

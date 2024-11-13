@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	@apply font-open-sans-regular;
+}
+
 @font-face {
 	font-family: 'OpenSans-Regular';
 	src: local('OpenSans-Regular'), url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
@@ -35,4 +39,20 @@
 @font-face {
 	font-family: 'SegoeUI-Bold';
 	src: local('SegoeUI-Bold'), url('./assets/fonts/SegoeUI-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gibson-SemiBold';
+	src: local('Gibson-SemiBold'), url('./assets/fonts/Gibson-SemiBold.otf'), format('opentype');
+}
+
+.input-form {
+	@apply font-open-sans-regular px-8 py-2 text-gray-medium bg-white outline-none;
+	font-size: 18px;
+	box-shadow: 2px 3px 4px #00000029;
+}
+
+.primary-button {
+	@apply font-open-sans-bold text-xl w-fit py-6 px-10 text-gray-light bg-blue-light rounded-full;
+	box-shadow: 0 3px 6px #2c1dad29;
 }

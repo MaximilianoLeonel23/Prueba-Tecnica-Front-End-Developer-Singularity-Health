@@ -6,10 +6,13 @@ import { BlogPage } from '../pages/general/BlogPage';
 import { AboutUsPage } from '../pages/general/AboutUsPage';
 import { FranchiseWithUsPage } from '../pages/general/FranchiseWithUsPage';
 import { NotFoundPage } from '../pages/error/NotFoundPage';
+import { Header } from '../components/header/Header';
+import { Footer } from '../components/footer/Footer';
 
 export const GeneralLayout = () => {
 	return (
-		<div>
+		<main className='min-h-screen bg-background-light px-32'>
+			<Header />
 			<Routes>
 				<Route path='/home' element={<HomePage />} />
 				<Route path='/location' element={<LocationPage />} />
@@ -19,6 +22,7 @@ export const GeneralLayout = () => {
 				<Route path='/franchise-with-us' element={<FranchiseWithUsPage />} />
 				<Route path='*' element={<NotFoundPage />} />
 			</Routes>
-		</div>
+			<Footer />
+		</main>
 	);
 };
