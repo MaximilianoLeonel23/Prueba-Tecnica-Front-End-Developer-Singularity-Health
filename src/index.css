@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: local('OpenSans-Regular'), url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: local('OpenSans-Bold'), url('./assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MuseoSansRounded700';
+	src: local('MuseoSansRounded700'), url('./assets/fonts/MuseoSansRounded700.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src: local('Comfortaa-Regular'), url('./assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Comfortaa-Bold';
+	src: local('Comfortaa-Bold'), url('./assets/fonts/Comfortaa-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SegoeUI-Regular';
+	src: local('SegoeUI-Regular'), url('./assets/fonts/SegoeUI-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SegoeUI-Bold';
+	src: local('SegoeUI-Bold'), url('./assets/fonts/SegoeUI-Bold.ttf') format('truetype');
+}
