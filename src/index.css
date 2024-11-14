@@ -53,6 +53,14 @@ body {
 }
 
 .primary-button {
-	@apply font-open-sans-bold text-xl w-fit py-6 px-10 text-gray-light bg-blue-light rounded-full;
+	@apply font-open-sans-bold text-lg w-fit py-5 px-8 text-gray-light bg-blue-light rounded-full;
 	box-shadow: 0 3px 6px #2c1dad29;
+}
+
+.nav-link {
+	@apply text-white text-lg;
+}
+
+.card-drop-shadow-gray {
+	box-shadow: 0px 3px 6px #00000029;
 }

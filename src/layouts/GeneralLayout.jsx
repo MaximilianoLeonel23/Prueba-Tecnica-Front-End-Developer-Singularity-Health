@@ -11,18 +11,20 @@ import { Footer } from '../components/footer/Footer';
 
 export const GeneralLayout = () => {
 	return (
-		<main className='min-h-screen bg-background-light px-32'>
+		<>
 			<Header />
-			<Routes>
-				<Route path='/home' element={<HomePage />} />
-				<Route path='/location' element={<LocationPage />} />
-				<Route path='/blog' element={<BlogPage />} />
-				<Route path='/services' element={<ServicesPage />} />
-				<Route path='/about-us' element={<AboutUsPage />} />
-				<Route path='/franchise-with-us' element={<FranchiseWithUsPage />} />
-				<Route path='*' element={<NotFoundPage />} />
-			</Routes>
+			<main className='min-h-screen bg-background-light flex flex-col'>
+				<Routes>
+					<Route path='/home' element={<HomePage />} />
+					<Route path='/location' element={<LocationPage />} />
+					<Route path='/blog' element={<BlogPage />} />
+					<Route path='/services' element={<ServicesPage />} />
+					<Route path='/about-us' element={<AboutUsPage />} />
+					<Route path='/franchise-with-us' element={<FranchiseWithUsPage />} />
+					<Route path='*' element={<NotFoundPage />} />
+				</Routes>
+			</main>
 			<Footer />
-		</main>
+		</>
 	);
 };

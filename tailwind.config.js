@@ -3,6 +3,12 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'red-card': 'url("/src/assets/images/red-card-background.png")',
+				'blue-card': 'url("/src/assets/images/blue-card-background.png")',
+				footer: 'url("/src/assets/images/footer-background.png")',
+				dashstroke: 'url("/src/assets/images/dashstroke-background.png")',
+			},
 			fontFamily: {
 				'open-sans-regular': ['OpenSans-Regular'],
 				'open-sans-bold': ['OpenSans-Bold'],
