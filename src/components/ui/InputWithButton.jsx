@@ -1,6 +1,6 @@
 const InputWithButton = ({ inputName, inputId, inputPlaceholder, icon, iconAlt }) => {
 	return (
-		<div className='flex items-center justify-between bg-white rounded-full p-2'>
+		<div className='flex items-center justify-between bg-white rounded-full p-2 drop-shadow-gray'>
 			<input
 				className='font-segoe-ui-regular text-lg text-gray-medium pl-4 outline-none'
 				type='text'

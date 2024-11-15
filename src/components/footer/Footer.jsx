@@ -1,69 +1,81 @@
 import InputWithButton from '../ui/InputWithButton';
 import arrowRight from '../../assets/icons/arrow-right.svg';
+import { Button } from '../ui/Button';
+import { useDispatch } from 'react-redux';
+import { logout } from '../../store/slices/auth/authSlice';
+import { Link } from 'react-router-dom';
 export const Footer = () => {
+	const dispatch = useDispatch();
+
+	const handleLogout = () => {
+		localStorage.setItem('lastRoute', '/home');
+
+		localStorage.removeItem('session');
+		dispatch(logout());
+	};
 	return (
-		<footer className='bg-background-light bg-footer bg-cover bg-center bg-no-repeat px-32'>
-			<div className='flex items-start  gap-8 pt-32 pb-16'>
+		<footer className='bg-background-light bg-footer bg-cover bg-center bg-no-repeat'>
+			<div className='container flex items-start gap-8 pt-48 pb-16'>
 				<div className='flex flex-1 flex-col gap-4'>
-					<h4 className='font-segoe-ui-bold text-secondary-yellow'>About</h4>
-					<ul className='font-segoe-ui-regular grid grid-cols-1 gap-4'>
+					<h4 className='font-open-sans-bold text-lg text-secondary-yellow'>About</h4>
+					<ul className='grid grid-cols-1 gap-4'>
 						<li className='nav-link'>
-							<a>Locations</a>
+							<Link to='/location'>Locations</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Franchise With Us</a>
+							<Link to='/franchise-with-us'>Franchise With Us</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Partners</a>
+							<Link to='/home'>Partners</Link>
 						</li>
 						<li className='nav-link'>
-							<a>About us</a>
+							<Link to='/about-us'>About us</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Make Fetch Happen!</a>
+							<Link to='/home'>Make Fetch Happen!</Link>
 						</li>
 					</ul>
 				</div>
 				<div className='flex flex-[2] flex-col gap-4'>
-					<h4 className='font-segoe-ui-bold text-secondary-yellow'>Resources</h4>
-					<ul className='font-segoe-ui-regular grid grid-cols-2 gap-4'>
+					<h4 className='font-open-sans-bold text-lg text-secondary-yellow'>Resources</h4>
+					<ul className='grid grid-cols-2 gap-4'>
 						<li className='nav-link'>
-							<a>Reviews</a>
+							<Link to='/home'>Reviews</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Pet Resource Center</a>
+							<Link to='/home'>Pet Resource Center</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Media Fact Sheet</a>
+							<Link to='/home'>Media Fact Sheet</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Blog</a>
+							<Link to='/blog'>Blog</Link>
 						</li>
 						<li className='nav-link'>
-							<a>News</a>
+							<Link to='/home'>News</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Gift Cards</a>
+							<Link to='/home'>Gift Cards</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Services</a>
+							<Link to='/services'>Services</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Franchisee Login</a>
+							<Link to='/home'>Franchisee Login</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Terms of Use</a>
+							<Link to='/home'>Terms of Use</Link>
 						</li>
 						<li className='nav-link'>
-							<a>Privacy Policy</a>
+							<Link to='/home'>Privacy Policy</Link>
 						</li>
 					</ul>
 				</div>
 				<div className='flex flex-1 flex-col gap-4'>
-					<h4 className='font-segoe-ui-bold text-secondary-yellow'>Newsletter</h4>
+					<h4 className='font-open-sans-bold text-lg text-secondary-yellow'>Newsletter</h4>
 					<div>
-						<p className='text-white'>Sign up to receive the Fetch!</p>
-						<p className='text-white'>Family Newsletter</p>
+						<p className='text-lg text-white'>Sign up to receive the Fetch!</p>
+						<p className='text-lg text-white'>Family Newsletter</p>
 					</div>
 					<div>
 						<InputWithButton
@@ -73,6 +85,9 @@ export const Footer = () => {
 							icon={arrowRight}
 							iconAlt='Arrow Right'
 						/>
+					</div>
+					<div>
+						<Button btnText='Logout' type='secondary' onClick={handleLogout} />
 					</div>
 				</div>
 			</div>

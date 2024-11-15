@@ -1,5 +1,7 @@
 import { Navigate } from 'react-router-dom';
 
 export const PublicRoutes = ({ children, isLogged }) => {
-	return !isLogged ? children : <Navigate to={'/home'} />;
+	const path = localStorage.getItem('lastRoute') || '/home';
+
+	return !isLogged ? children : <Navigate to={path} />;
 };

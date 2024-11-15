@@ -11,7 +11,7 @@ export const TestimonialSection = ({ title }) => {
 	}, [dispatch]);
 
 	return (
-		<section className='flex flex-col justify-center items-center gap-16 px-56 mt-[15rem] py-32 z-10'>
+		<section className='container flex flex-col justify-center items-center gap-16 mt-[15rem] px-24 py-32 z-10'>
 			<h2 className='w-1/2 font-open-sans-bold text-4xl text-primary-red text-center'>{title}</h2>
 			<Carousel items={users} />
 		</section>

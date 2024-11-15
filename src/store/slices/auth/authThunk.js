@@ -25,6 +25,7 @@ export const getLogin = formData => {
 
 			dispatch(login(session));
 			localStorage.setItem('session', JSON.stringify(session));
+			localStorage.setItem('lastRoute', '/home');
 		} catch (error) {
 			const errorMessage = error.response?.data?.error || 'Error de autenticación';
 

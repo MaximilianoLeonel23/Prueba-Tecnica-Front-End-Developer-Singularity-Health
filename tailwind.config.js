@@ -3,11 +3,17 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			container: {
+				center: true,
+				padding: '1rem',
+			},
 			backgroundImage: {
+				login: 'url("/src/assets/images/login-background.png")',
 				'red-card': 'url("/src/assets/images/red-card-background.png")',
 				'blue-card': 'url("/src/assets/images/blue-card-background.png")',
 				footer: 'url("/src/assets/images/footer-background.png")',
 				dashstroke: 'url("/src/assets/images/dashstroke-background.png")',
+				'call-to-action': 'url("/src/assets/images/call-to-action-background.png")',
 			},
 			fontFamily: {
 				'open-sans-regular': ['OpenSans-Regular'],

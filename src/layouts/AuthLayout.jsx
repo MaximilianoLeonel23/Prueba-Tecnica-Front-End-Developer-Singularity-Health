@@ -1,14 +1,9 @@
-import { Route, Routes } from 'react-router-dom';
-import { LoginPage } from '../pages/auth/LoginPage';
-import { NotFoundPage } from '../pages/error/NotFoundPage';
+import { Outlet } from 'react-router-dom';
 
 export const AuthLayout = () => {
 	return (
-		<main className='bg-white'>
-			<Routes>
-				<Route path='/login' element={<LoginPage />} />
-				<Route path='*' element={<NotFoundPage />} />
-			</Routes>
+		<main className='min-h-screen bg-white flex items-center justify-center'>
+			<Outlet />
 		</main>
 	);
 };

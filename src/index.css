@@ -53,14 +53,24 @@ body {
 }
 
 .primary-button {
-	@apply font-open-sans-bold text-lg w-fit py-5 px-8 text-gray-light bg-blue-light rounded-full;
-	box-shadow: 0 3px 6px #2c1dad29;
+	@apply font-open-sans-bold text-lg w-fit py-5 px-8 text-gray-light bg-blue-light rounded-full hover:brightness-90 transition duration-150;
+	box-shadow: 0px 3px 6px #2c1dad29;
+}
+
+.secondary-button {
+	@apply font-open-sans-bold text-lg w-fit py-5 px-8 text-primary-red bg-gray-light rounded-full hover:brightness-90 transition duration-150;
+	box-shadow: 0px 3px 6px #00000029;
 }
 
 .nav-link {
-	@apply text-white text-lg;
+	@apply text-white text-lg hover:text-secondary-yellow transition duration-150 cursor-pointer;
 }
 
-.card-drop-shadow-gray {
+.drop-shadow-gray {
 	box-shadow: 0px 3px 6px #00000029;
+}
+
+.btn-icon {
+	@apply flex items-center justify-center w-12 h-12 bg-primary-red rounded-full p-2 hover:brightness-90 transition duration-150;
+	box-shadow: 0px 3px 6px #fd68454d;
 }

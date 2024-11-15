@@ -3,6 +3,8 @@ import { useForm } from '../../hooks/useForm';
 import { getLogin } from '../../store/slices/auth/authThunk';
 import { useEffect, useState } from 'react';
 import logoIconDesktop from '../../assets/icons/logo-icon-desktop.svg';
+import loginBackground from '../../assets/images/login-background.png';
+import { Link } from 'react-router-dom';
 export const LoginPage = () => {
 	const [isDisabled, setIsDisabled] = useState(true);
 	const { formData, onChangeInput } = useForm({
@@ -26,13 +28,18 @@ export const LoginPage = () => {
 	};
 
 	return (
-		<div className='min-h-screen flex items-center'>
-			<div className='bg-primary-red w-1/2 h-screen flex items-center justify-center'>
-				<div className='flex items-center justify-center bg-white rounded-[50%] p-12'>
-					<img className='w-60 h-60' src={logoIconDesktop} />
+		<div className='w-full flex items-center justify-center'>
+			<div className='w-1/2 h-screen flex items-center justify-center'>
+				<img
+					src={loginBackground}
+					alt='Waves Background'
+					className='absolute top-0 left-0 w-full h-full object-contain object-left'
+				/>
+				<div className='flex justify-center items-center bg-white rounded-[50%] p-12 z-10'>
+					<img className='w-48 h-48' src={logoIconDesktop} />
 				</div>
 			</div>
-			<section className='px-32 w-1/2 flex flex-col justify-center gap-8'>
+			<section className='px-32 w-1/2 flex flex-col justify-center gap-8 z-20'>
 				<div className='border-l-primary-red border-l-8 text-left px-8'>
 					<h1 className='font-gibson-semibold text-2xl text-gray-extra-dark'>BIENVENIDO</h1>
 				</div>
@@ -62,9 +69,12 @@ export const LoginPage = () => {
 					{error?.type == 'password' && <p className='text-primary-red'>{error.message}</p>}
 				</div>
 				<div className='flex justify-end'>
-					<a className='text-gray-medium text-sm' href='/auth/forgot-password'>
+					<Link
+						className='text-gray-medium text-sm hover:text-primary-red transition duration-200'
+						to='/auth/forgot-password'
+					>
 						¿Olvidaste la contraseña?
-					</a>
+					</Link>
 				</div>
 				{error?.type == 'general' && (
 					<div className='bg-primary-red font-open-sans-regular px-8 py-2 text-white'>
@@ -73,7 +83,7 @@ export const LoginPage = () => {
 				)}
 				<div className='flex justify-center'>
 					<button
-						className='primary-button disabled:bg-opacity-80'
+						className='primary-button disabled:bg-opacity-80 disabled:hover:brightness-100'
 						type='button'
 						onClick={handleSubmit}
 						disabled={isDisabled || isLoading}
@@ -84,9 +94,9 @@ export const LoginPage = () => {
 				<div className='flex justify-center'>
 					<p className='text-gray-medium text-sm'>
 						AÚN NO TENGO CUENTA{' '}
-						<a className=' text-blue-dark' href='/auth/register'>
+						<Link className=' text-blue-dark' to='/auth/register'>
 							REGISTRARSE
-						</a>
+						</Link>
 					</p>
 				</div>
 			</section>
