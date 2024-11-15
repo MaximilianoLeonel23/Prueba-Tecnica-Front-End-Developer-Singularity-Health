@@ -56,13 +56,19 @@
    ```
 
 3. Accede a la carpeta del proyecto:
-   `cd Prueba-Tecnica-Front-End-Developer-Singularity-Health`
+   ```bash
+   cd Prueba-Tecnica-Front-End-Developer-Singularity-Health
+   ```
 
-4. Instala las dependencias necesarias:
-   `npm install`
+5. Instala las dependencias necesarias:
+   ```bash
+   npm install
+   ```
 
-5. Para ejecutar el proyecto en tu entorno local, utiliza el siguiente comando:
-   `npm run dev`
+7. Para ejecutar el proyecto en tu entorno local, utiliza el siguiente comando:
+   ````bash
+   npm run dev
+   ```
 
 ### Intrucciones
 
