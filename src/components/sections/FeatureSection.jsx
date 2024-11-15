@@ -45,7 +45,7 @@ export const FeatureSection = ({
 				</div>
 			</div>
 			<div className='w-full absolute left-0 top-0 right-0 -z-10'>
-				<img className='w-full' src={homeBackground} />
+				<img className='w-full' src={homeBackground} alt='Blue waves background' />
 			</div>
 		</section>
 	);

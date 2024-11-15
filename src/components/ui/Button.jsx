@@ -5,7 +5,7 @@ export const Button = ({ btnText, type = 'primary', onClick }) => {
 	};
 
 	return (
-		<button className={btnClass[type]} onClick={onClick}>
+		<button className={btnClass[type]} onClick={onClick} aria-label='Click to take action'>
 			{btnText}
 		</button>
 	);

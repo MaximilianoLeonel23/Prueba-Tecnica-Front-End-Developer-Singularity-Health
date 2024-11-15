@@ -2,16 +2,13 @@ import InputWithButton from '../ui/InputWithButton';
 import arrowRight from '../../assets/icons/arrow-right.svg';
 import { Button } from '../ui/Button';
 import { useDispatch } from 'react-redux';
-import { logout } from '../../store/slices/auth/authSlice';
 import { Link } from 'react-router-dom';
+import { getLogout } from '../../store/slices/auth/authThunk';
 export const Footer = () => {
 	const dispatch = useDispatch();
 
 	const handleLogout = () => {
-		localStorage.setItem('lastRoute', '/home');
-
-		localStorage.removeItem('session');
-		dispatch(logout());
+		dispatch(getLogout());
 	};
 	return (
 		<footer className='bg-background-light bg-footer bg-cover bg-center bg-no-repeat'>

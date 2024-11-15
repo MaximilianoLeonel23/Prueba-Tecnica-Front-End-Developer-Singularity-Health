@@ -13,7 +13,7 @@ export const HeroSection = ({ title, subtitle, btnText, btnLabel }) => {
 				</div>
 			</div>
 			<div className='w-1/2 flex items-start justify-center'>
-				<img src={golderRetrieverImg} alt='Golden Retriever' className='p-12' />
+				<img src={golderRetrieverImg} alt='Golden Retriever image' className='p-12' />
 			</div>
 		</section>
 	);

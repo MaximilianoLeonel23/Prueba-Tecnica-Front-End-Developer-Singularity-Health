@@ -26,7 +26,11 @@ export const HowToSection = ({
 					})}
 
 					<div className='absolute inset-0 -z-10'>
-						<img src={dashstroke} alt='Dashstroke line' className='w-full h-full object-contain p-12' />
+						<img
+							src={dashstroke}
+							alt='Red dashstroke line'
+							className='w-full h-full object-contain p-12'
+						/>
 					</div>
 				</div>
 				<div className='w-1/2 flex flex-col gap-8'>
@@ -47,7 +51,7 @@ export const HowToSection = ({
 				</div>
 			</div>
 			<div className='absolute -top-32 -right-1/3 -z-10'>
-				<img className='' src={yellowCircleLg} />
+				<img src={yellowCircleLg} alt='Yellow circle' />
 			</div>
 		</section>
 	);

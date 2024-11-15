@@ -71,3 +71,11 @@ export const checkToken = () => {
 		);
 	};
 };
+
+export const getLogout = () => {
+	return dispatch => {
+		localStorage.setItem('lastRoute', '/home');
+		localStorage.removeItem('session');
+		return dispatch(logout());
+	};
+};
