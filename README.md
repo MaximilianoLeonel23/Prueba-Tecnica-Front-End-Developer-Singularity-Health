@@ -66,7 +66,7 @@
    ```
 
 7. Para ejecutar el proyecto en tu entorno local, utiliza el siguiente comando:
-   ````bash
+   ```bash
    npm run dev
    ```
 
