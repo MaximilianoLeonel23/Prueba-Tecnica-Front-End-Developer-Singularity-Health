@@ -16,55 +16,85 @@ export const Footer = () => {
 				<div className='flex flex-1 flex-col gap-4'>
 					<h4 className='font-open-sans-bold text-lg text-secondary-yellow'>About</h4>
 					<ul className='grid grid-cols-1 gap-4'>
-						<li className='nav-link'>
-							<Link to='/location'>Locations</Link>
+						<li>
+							<Link className='nav-link' to='/location'>
+								Locations
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/franchise-with-us'>Franchise With Us</Link>
+						<li>
+							<Link className='nav-link' to='/franchise-with-us'>
+								Franchise With Us
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Partners</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Partners
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/about-us'>About us</Link>
+						<li>
+							<Link className='nav-link' to='/about-us'>
+								About us
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Make Fetch Happen!</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Make Fetch Happen!
+							</Link>
 						</li>
 					</ul>
 				</div>
 				<div className='flex flex-[2] flex-col gap-4'>
 					<h4 className='font-open-sans-bold text-lg text-secondary-yellow'>Resources</h4>
 					<ul className='grid grid-cols-2 gap-4'>
-						<li className='nav-link'>
-							<Link to='/home'>Reviews</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Reviews
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Pet Resource Center</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Pet Resource Center
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Media Fact Sheet</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Media Fact Sheet
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/blog'>Blog</Link>
+						<li>
+							<Link className='nav-link' to='/blog'>
+								Blog
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>News</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								News
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Gift Cards</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Gift Cards
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/services'>Services</Link>
+						<li>
+							<Link className='nav-link' to='/services'>
+								Services
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Franchisee Login</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Franchisee Login
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Terms of Use</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Terms of Use
+							</Link>
 						</li>
-						<li className='nav-link'>
-							<Link to='/home'>Privacy Policy</Link>
+						<li>
+							<Link className='nav-link' to='/home'>
+								Privacy Policy
+							</Link>
 						</li>
 					</ul>
 				</div>
